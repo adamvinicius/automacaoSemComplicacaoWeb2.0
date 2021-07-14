@@ -11,7 +11,9 @@ public class Driver {
     private WebDriver driver;
 
     public Driver(String navegador){
+
         switch (navegador){
+
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
@@ -35,5 +37,7 @@ public class Driver {
     public WebDriver getDriver() {
         return driver;
     }
+
+
 
 }
