@@ -46,11 +46,6 @@ public class TesteWeb {
         assertEquals("AUTOMAÇÃO SEM COMPLICAÇÃO WEB 2.0", titulo);
     }
 
-
-
-
-
-
     @After
     public void finalizaTeste(){
         driver.quit();
