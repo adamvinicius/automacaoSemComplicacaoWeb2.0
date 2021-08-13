@@ -1,8 +1,10 @@
 package br.com.chronosacademy.maps;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginMap {
+    @FindBy(css = "#menuUser")
     public WebElement btnLogin; //click
     public WebElement btnFechar; //click
     public WebElement divFechaModal; //click

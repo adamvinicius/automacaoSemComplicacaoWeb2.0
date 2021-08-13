@@ -28,7 +28,7 @@ public class LoginSteps {
     public void queAModalEstejaSendoExibida() {
         Driver.getDriver().get("https://www.advantageonlineshopping.com/");
         loginPage = new LoginPage();
-      //  loginPage.clickBtnLogin();
+        loginPage.clickBtnLogin();
 
     }
     @Quando("for realizado um clique fora da modal")
@@ -36,9 +36,16 @@ public class LoginSteps {
         loginPage.clickDivFechaModal();
     }
     @Entao("a janela modal deve ser fechada")
-    public void aJanelaModalDeveSerFechada() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void aJanelaModalDeveSerFechada() throws Exception {
+        try {
+            loginPage.invisibilityOfBtnFechar();
+        } catch (Exception e){
+            throw new Exception("A janela modal não foi fechada");
+        }
+
+
+
+
     }
 
     @Quando("for realizado um clique icone de fechar da modal")
