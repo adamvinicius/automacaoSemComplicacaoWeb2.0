@@ -21,6 +21,7 @@ public class LoginMap {
     public WebElement btnSignIn; //click
     @FindBy(linkText = "CREATE NEW ACCOUNT")
     public WebElement linkCreateAccount; //click
-
+    @FindBy(css = ".loader")
+    public WebElement divLoader;
 
 }
