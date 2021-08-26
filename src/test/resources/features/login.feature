@@ -1,5 +1,5 @@
 #language:pt
-
+@Login
 Funcionalidade: Login
 
   Contexto:
@@ -16,7 +16,7 @@ Funcionalidade: Login
   Cenario: Link Create New Account
     Quando for realizado um clique em Create New Account
     Entao a pagina Create Account deve ser exibida
-
+  @loginComSucesso
   Esquema do Cenario: Realizar login <identificacao>
     Quando os campos de login forem preenchidos com os valores
       | usuario  | <usuario>  |
@@ -26,9 +26,9 @@ Funcionalidade: Login
     Entao deve ser possivel logar no sistema
     Exemplos:
       | identificacao           | usuario | senha | remember |
-      | com campos obrigatórios | chronos | senha | false    |
-      | todos os campos         | chronos | senha | true     |
-
+      | com campos obrigatórios | chronos | Senha123 | false    |
+      | todos os campos         | chronos | Senha123 | true     |
+  @loginComErro
   Esquema do Cenario: Realizar login com <identificacao>
     Quando os campos de login forem preenchidos com os valores
       | usuario  | <usuario>  |
@@ -38,7 +38,7 @@ Funcionalidade: Login
     Entao o sistema devera exibir uma mensagem de erro
     Exemplos:
       | identificacao    | usuario  | senha    | remember |
-      | usuário inválido | invalido | senha    | false    |
+      | usuário inválido | invalido | Senha123    | false    |
       | senha inválida   | chronos  | invalida | false    |
   @dadosEmBranco
   Esquema do Cenario: Realizar login com <identificacao>

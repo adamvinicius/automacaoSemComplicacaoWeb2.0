@@ -67,5 +67,15 @@ public class LoginPage {
         Driver.attributeChange(loginMap.divLoader, "display", "none");
     }
 
+    public String getTextLogado(){
+        Driver.visibilityOf(loginMap.textLogado);
+        return loginMap.textLogado.getText();
+    }
+
+    public String getErroLogin(){
+        Driver.visibilityOf(loginMap.textErroLogin);
+        return loginMap.textErroLogin.getText();
+    }
+
 
 }
