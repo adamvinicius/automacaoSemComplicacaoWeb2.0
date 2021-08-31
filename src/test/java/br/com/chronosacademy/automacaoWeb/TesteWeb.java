@@ -30,7 +30,7 @@ public class TesteWeb {
         principalPage = new PrincipalPage(driver);
     }
 
-    @Test
+   // @Test
     public void primeiroTeste(){
 
         String titulo = principalPage.getTitulo();
@@ -38,7 +38,7 @@ public class TesteWeb {
         assertEquals("Porque Tempo É Conhecimento", titulo);
     }
 
-    @Test
+   // @Test
     public void segundoTeste(){
         principalPage.clickBotao();
         cursoPage = new CursoPage(driver);
