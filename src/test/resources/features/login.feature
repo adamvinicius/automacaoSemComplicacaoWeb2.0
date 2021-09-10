@@ -26,7 +26,7 @@ Funcionalidade: Login
     Entao deve ser possivel logar no sistema
     Exemplos:
       | identificacao           | usuario | senha | remember |
-      | com campos obrigatórios | chronos | Senha123 | false    |
+      | com campos obrigatórios | erro    | Senha123 | false    |
       | todos os campos         | chronos | Senha123 | true     |
   @loginComErro
   Esquema do Cenario: Realizar login com <identificacao>
