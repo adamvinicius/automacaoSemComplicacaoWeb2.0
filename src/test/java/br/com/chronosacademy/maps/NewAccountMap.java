@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class NewAccountMap {
     @FindBy(css = ".fixedImportant")
     public WebElement textCreateAccount;
-    @FindBy(name = "username")
+    @FindBy(name = "usernameRegisterPage")
     public WebElement inpUserName;
     @FindBy(name = "emailRegisterPage")
     public WebElement inpEmail;

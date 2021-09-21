@@ -115,4 +115,13 @@ public class LoginSteps {
         boolean enabled = loginPage.isBtnSignIn();
         Assert.assertFalse(enabled);
     }
+
+    @Dado("que esteja logado no sistema com")
+    public void queEstejaLogadoNoSistemaCom(Map<String, String> map) throws IOException {
+        queAModalEstejaSendoExibida();
+        osCamposDeLoginForemPreenchidosComOsValores(map);
+        loginPage.clickBtnSignIn();
+        deveSerPossivelLogarNoSistema();
+
+    }
 }
