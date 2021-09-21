@@ -19,6 +19,7 @@ public class NewAccountPage {
     }
 
     public void setInpUserName(String userName){
+        Driver.visibilityOf(newAccountMap.inpUserName);
         newAccountMap.inpUserName.sendKeys(userName);
     }
 
@@ -36,6 +37,7 @@ public class NewAccountPage {
 
     public void selectCountry(String country){
         Select select = new Select(newAccountMap.slcCountry);
+        Driver.aguardaOptions(select);
         select.selectByVisibleText(country);
     }
 
