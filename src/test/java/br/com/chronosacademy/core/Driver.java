@@ -103,6 +103,7 @@ public class Driver {
 
     public static void visibilityOf(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
+
     }
 
     public static void invisibilityOf(WebElement element){
