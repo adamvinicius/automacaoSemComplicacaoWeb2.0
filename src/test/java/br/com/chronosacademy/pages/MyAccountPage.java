@@ -39,6 +39,31 @@ public class MyAccountPage {
 
     public void clickBtnYes(){
         Driver.visibilityOf(myAccountMap.btnYes);
-        myAccountMap.btnYes.click();    }
+        myAccountMap.btnYes.click();
+    }
+
+    public String getTextDelete(){
+        Driver.visibilityOf(myAccountMap.textDelete);
+        return myAccountMap.textDelete.getText();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

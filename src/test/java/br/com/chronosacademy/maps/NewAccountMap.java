@@ -16,7 +16,7 @@ public class NewAccountMap {
     public WebElement getInpConfirmPassword;
     @FindBy(name = "countryListboxRegisterPage")
     public WebElement slcCountry;
-    @FindBy(name = "i_agree")
+    @FindBy(xpath = "//*[@name='i_agree']/../label")
     public WebElement inpIagree;
     @FindBy(css = "#register_btnundefined")
     public WebElement btnRegister;
