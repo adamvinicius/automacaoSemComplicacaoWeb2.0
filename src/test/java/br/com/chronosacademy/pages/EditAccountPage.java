@@ -3,6 +3,7 @@ package br.com.chronosacademy.pages;
 import br.com.chronosacademy.core.Driver;
 import br.com.chronosacademy.maps.EditAccountMap;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class EditAccountPage {
     EditAccountMap editAccountMap;
@@ -22,6 +23,7 @@ public class EditAccountPage {
     }
 
     public void clickBtnSave(){
+        Driver.aguardaOptions(new Select(editAccountMap.slcCountry));
         editAccountMap.btnSave.click();
     }
 }

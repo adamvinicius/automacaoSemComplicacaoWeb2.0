@@ -10,4 +10,6 @@ public class EditAccountMap {
     public WebElement inpLastName;
     @FindBy(css = "#save_btnundefined")
     public WebElement btnSave;
+    @FindBy(name = "countryListboxAccountDetails")
+    public WebElement slcCountry;
 }
